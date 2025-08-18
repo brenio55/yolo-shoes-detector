@@ -1,0 +1,5 @@
+train: ./datasets/shoes/images/train
+val: ./datasets/shoes/images/val
+
+nc: 1
+names: ['shoe']
