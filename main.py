@@ -35,7 +35,7 @@ def process_frame(frame, model, roi, active_ids, collected_ids, disappeared, max
     roi_frame = cv2.bitwise_and(frame, mask)
 
     # Rastreia objetos na ROI
-    results = model.track(roi_frame, persist=True, conf=0.3, verbose=False)
+    results = model.track(roi_frame, persist=True, conf=0.2, verbose=False)
     
     current_ids = []
     if results[0].boxes.id is not None:
